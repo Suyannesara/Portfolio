@@ -3,6 +3,7 @@
   --secundary-color: #8695A4;
   --title-color: #FFFFFF;
   --text-color: #BAC1C3;
+  --details-color: #767676;
 }
 
 *{
@@ -13,19 +14,25 @@
 body{
   height: 100%;
   width: 100%;
-}
 
-header{
   background-color: var(--main-color);
+  font-family: 'Heebo', sans-serif;
 }
 
 h2{
   color: var(--title-color);
+  padding-left: 5%;
+
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 p{
   margin-top: 20px;
   color: var(--text-color);
+
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .about{
@@ -39,7 +46,6 @@ p{
 
 .about .text{
   margin-top: 27px;
-  font-family: 'Heebo', sans-serif;
   font-weight: 400;
 }
 
@@ -64,4 +70,84 @@ button:hover{
   transition-duration: 800ms;
   
   cursor: pointer;
+}
+
+sup, sub{
+  font-size: 24px;
+  font-family: 'Gochi Hand';
+  color: var(--details-color);
+}
+
+
+.projects .cards{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  align-items: center;
+}
+
+.projects .cards .pcard{
+  display: flex;
+  margin-top: 5%;
+  
+  width: 210px;
+  height: 130px;
+
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 10px;
+
+  background-color: var(--details-color);
+  opacity: 0.5;
+}
+
+.pcard img{
+  width: 120px;
+}
+
+.projects .cards .pcard:hover{
+  cursor: pointer;
+
+  background-color: #FFFFFF;
+  opacity: 1;
+  transition-duration: 800ms;
+}
+
+/*CARDS BACKGROUND COLOR*/
+#card1, #card3{
+  background-color: #FFFFFF;
+}
+#card2{
+  background-color: #04D361;
+}
+#card2 img{
+  margin-left: 20px;
+}
+#card4{
+  background-color: #0077B7;
+}
+
+/*SECTION 2 - HABILITIES*/
+.habilities{
+  display: flex; 
+  margin-top: 10%;
+  flex-direction: column;
+}
+
+.habilities img{
+  margin-top: 5%;
+  width: 60%;
+
+  align-self:center;
+  justify-self: center;
+}
+
+/*FOOTER*/
+footer{
+  width: 100%;
+  height: 200px;
+
+  background-color: var(--title-color);
 }
