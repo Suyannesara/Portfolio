@@ -17,13 +17,16 @@
 <body>
   <header>
     <nav>
-      <a href="#projects">Projects</a>
-      <a href="#habilities">Habilities</a>
-      <a href="#contacts">Contact</a>
+      <button onclick="open()" id="btn_mobile"><img src="images/menu.svg" alt="Menu"></button>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#habilities">Habilities</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
     </nav>
     <div class="about">
       <div class="picture">
-        <img src="images/SuyannePhoto.png" alt="">
+        <img src="images/SuyannePhoto.png" alt="Suyanne">
       </div>
 
       <div class="text">
@@ -33,7 +36,7 @@
         </h2>
         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 
-        <a href=""><button>Dowload Resume</button></a>
+        <a href=""><button>Download Resume</button></a>
       </div>
     </div>
   </header>
@@ -83,20 +86,23 @@
     <div class="social_media">
       <!-- BEHANCE  -->
       <a href="">
-        <img src="" alt="behance">
+        <img src="images/LogoBehance.svg" alt="behance">
       </a>
       <!-- GITHUB  -->
       <a href="">
-        <img src="" alt="github">
+        <img src="images/LogoGithub.svg" alt="github">
       </a>
       <!-- LINKEDIN -->
       <a href="">
-        <img src="" alt="linkedIn">
+        <img src="images/LogoLinkedIn.svg" alt="linkedIn">
       </a>
     </div>
     
     <p>Copyright ©2022. All right reserved. Created by : Suyanne Miranda</p>
   </footer>
+
+  <!-- SCRIPT JS -->
+  <script src="menu.js"></script>
 
 </body>
 </html>
