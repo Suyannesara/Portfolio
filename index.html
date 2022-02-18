@@ -5,8 +5,104 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About me</title>
+
+  <!-- LINK FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS LINK  -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <header>
+    <nav>
+      <button onclick="open()" id="btn_mobile"><img src="images/menu.svg" alt="Menu"></button>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#habilities">Habilities</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="about">
+      <div class="picture">
+        <img src="images/SuyannePhoto.png" alt="Suyanne">
+      </div>
+
+      <div class="text">
+        <h2>
+          Hi, I am Suyanne, <br>
+          Front-end Developer
+        </h2>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+
+        <a href=""><button>Download Resume</button></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION PROJECTS -->
+  <section class="projects">
+    <h2 id="projects"> <sup> < h2 ></sup> My Projects <sub> < /h2 ></sub></h2>
+    <!-- CARDS -->
+    <div class="cards">
+      <!-- 1° CARD -->
+      <div class="pcard" id="card1">
+        <a href="http://" target="_blank">
+          <img src="images/LogoPlantae.svg" alt="Plantae Logo">
+        </a>
+      </div>
+
+      <!-- 2° CARD -->
+      <div class="pcard" id="card2">
+        <a href="http://" target="_blank">
+          <img src="images/LogoSESIinterclass.svg" alt="SESI interclass logo">
+        </a>
+      </div>
+
+      <!-- 3° CARD -->
+      <div class="pcard" id="card3">
+        <a href="http://" target="_blank">
+          <img src="images/LogoRobotica.svg" alt="Web Site Robotica Logo">
+        </a>
+      </div>
+
+      <!-- 4° CARD -->
+      <div class="pcard" id="card4">
+        <a href="http://" target="_blank">
+          <img src="images/LogoCurriculin.svg" alt="Curriculin Logo">
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="habilities">
+    <h2><sup> < h2 ></sup> Habilities <sub> < /h2 ></sub></h2>
+    <img src="images/Technologies.svg" alt="technologies">
+  </section>
+
+  <footer>
+    <div class="social_media">
+      <!-- BEHANCE  -->
+      <a href="">
+        <img src="images/LogoBehance.svg" alt="behance">
+      </a>
+      <!-- GITHUB  -->
+      <a href="">
+        <img src="images/LogoGithub.svg" alt="github">
+      </a>
+      <!-- LINKEDIN -->
+      <a href="">
+        <img src="images/LogoLinkedIn.svg" alt="linkedIn">
+      </a>
+    </div>
+    
+    <p>Copyright ©2022. All right reserved. Created by : Suyanne Miranda</p>
+  </footer>
+
+  <!-- SCRIPT JS -->
+  <script src="menu.js"></script>
+
 </body>
 </html>
