@@ -36,26 +36,38 @@ p{
 }
 
 /*NAV BAR*/
-header{
-  margin: 5% 0 5% 5%;
-}
-
 nav{
   display: flex;
-  width: 40%;
+  width: 50%;
+  padding: 8% 0 0% 5%;
 
   align-items: center;
   justify-content: space-between;
-  
 }
 
 #btn_mobile{
+  display: none;
   background-color: var(--main-color);
   border: none;
 }
 
 #btn_mobile:hover{
   cursor: pointer;
+}
+
+#menu a{
+  color: var(--text-color);
+}
+
+ul{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li,a{
+  text-decoration: none;
+  list-style-type: none;
 }
 
 /*HEADER - ABOUT*/
@@ -154,13 +166,13 @@ sup, sub{
 }
 
 /*SECTION 2 - HABILITIES*/
-.habilities{
+#habilities{
   display: flex; 
   margin-top: 10%;
   flex-direction: column;
 }
 
-.habilities img{
+#habilities img{
   margin-top: 5%;
   width: 60%;
 
@@ -174,7 +186,7 @@ footer{
   flex-direction: column;
 
   margin-top: 10%;
-  width: 100%;
+  padding: 0 10% 0 10%;
   height: 200px;
 
   background-color: var(--title-color);
@@ -185,12 +197,13 @@ footer{
 
 footer .social_media{
   display: flex;
-  width: 25%;
 
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
   align-items: center;
 }
+
+
 
 .social_media a{
   text-decoration: none;
@@ -198,8 +211,34 @@ footer .social_media{
 
 .social_media img{
   width: 30px;
+  padding: 0 1em;
 }
 
-footer p{
+footer small{
+  padding-top: 5%;
   color: var(--main-color);
+  text-align: center;
+}
+
+@media (max-width:800px){
+  #btn_mobile{
+    display: block;
+  }
+
+  #menu{
+    display: none;
+
+    position: absolute;
+    top: 10%;
+  }
+
+  #menu li{
+    width: 70px;
+    padding: 2%;
+    background-color: var(--main-color);
+  }
+
+  #nav.active #menu{
+    display: block;
+  }
 }
