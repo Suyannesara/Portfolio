@@ -266,9 +266,14 @@ nav ul li,a{
 
 /*MOBILE*/
 @media (max-width:800px){
+  .projects, #habilities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   h2{
     color: var(--title-color);
-    padding-left: 5%;
   
     font-size: 1.5em;
     font-weight: bold;
@@ -303,7 +308,8 @@ nav ul li,a{
     display: none;
 
     position: absolute;
-    top: 10%;
+    top: 15%;
+    left: 45px;
   }
 
   #menu li{
@@ -314,6 +320,15 @@ nav ul li,a{
 
   #nav.active #menu{
     display: block;
+  }
+
+  .about .picture img{
+    max-width: 200px;
+    text-align: right;
+
+    border-radius: 4px 50px 20px 80px;
+    box-shadow: 10px 10px 0px 1px var(--secundary-color);
+
   }
 
   .about .text{
